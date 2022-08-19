@@ -9,6 +9,8 @@ async function main() {
     "0x39ef98a05b53e45a081d87832cffdc5dc6009d66"
   );
 
+  const saveMintTx = await LongsNFT.safeMint("0x4208a5f4717d8EebC2E00B853f52403247C40A0F", "ipfs://QmVxKAk54wJU1YoDZYXMNCHtqmk2XeDazW3ewKZQdoQAtN");
+  
   const NFTName = await LongsNFT.name();
   console.log(NFTName);
 }
