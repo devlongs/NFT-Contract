@@ -10,9 +10,10 @@ async function main() {
   );
 
   const saveMintTx = await LongsNFT.safeMint("0x4208a5f4717d8EebC2E00B853f52403247C40A0F", "ipfs://QmVxKAk54wJU1YoDZYXMNCHtqmk2XeDazW3ewKZQdoQAtN");
-  
+
   const NFTName = await LongsNFT.name();
-  console.log(NFTName);
+  console.log("Minting transaction receipit: ", saveMintTx)
+  console.log("NFT name: ", NFTName);
 }
 
 main().catch((error) => {
